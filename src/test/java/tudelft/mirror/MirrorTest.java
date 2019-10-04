@@ -8,7 +8,7 @@ public class MirrorTest {
 
   @ParameterizedTest
   @CsvSource({ "abba, abba", "abca, a", "aa, aa", "e, e", "eeeteee, eeeteee", "ttggtt, ttggtt"})
-  public void totalIsTooBig(String text, String expectedResult) {
+  public void mirrorTest(String text, String expectedResult) {
     Mirror mirror = new Mirror();
     String result = mirror.mirrorEnds(text);
     Assertions.assertEquals(expectedResult, result);
