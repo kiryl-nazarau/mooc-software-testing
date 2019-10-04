@@ -13,7 +13,7 @@ class TwoNumbersSum {
         int complement = 0;
         ArrayList<Integer> result = new ArrayList<>();
 
-        for(int i = 0; i < Math.max(first.size(), second.size()); i++){
+        for(int i = 0; i <= Math.max(first.size(), second.size()); i++){
             int firstVal = i < first.size() ? first.get(i) : 0;
             int secondVal = i < second.size() ? second.get(i) : 0;
             int total = firstVal + secondVal + complement;
